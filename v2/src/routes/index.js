@@ -1,0 +1,10 @@
+module.exports.User = require("./users");
+module.exports.Market = require("./market");
+module.exports.Country = require("./country");
+module.exports.Hotel = require("./hotel");
+module.exports.Period = require("./period");
+module.exports.PricePerPerson = require("./pricePerPerson");
+module.exports.Pac = require("./pac");
+module.exports.Room = require("./room");
+module.exports.UpdateData = require("./updateData");
+module.exports.CountryAndHotel = require("./countryAndHotel");

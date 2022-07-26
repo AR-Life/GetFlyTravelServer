@@ -1,0 +1,4 @@
+{"level":"error","message":"\"contract\" is not allowed","service":"user-service"}
+{"level":"error","message":"\"contract\" must be a string","service":"user-service"}
+{"level":"error","message":"\"selectedContract\" is not allowed","service":"user-service"}
+{"level":"error","message":"\"email\" must be a valid email","service":"user-service"}
