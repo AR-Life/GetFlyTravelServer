@@ -6,3 +6,4 @@ module.exports.period = require("./period");
 module.exports.room = require("./room");
 module.exports.pricePerPerson = require("./pricePerPerson");
 module.exports.pac = require("./pac");
+module.exports.action = require("./action");

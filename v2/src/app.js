@@ -16,7 +16,8 @@ const {
 	Pac,
 	Room,
 	UpdateData,
-	CountryAndHotel
+	CountryAndHotel,
+	Action
 } = require("./routes/");
 
 
@@ -46,4 +47,5 @@ app.listen(process.env.APP_PORT, () => {
 	app.use('/room', Room);
 	app.use('/countryandhotel', CountryAndHotel);
 	app.use('/updateData', UpdateData);
+	app.use('/action', Action);
 });

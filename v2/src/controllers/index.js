@@ -8,3 +8,4 @@ module.exports.pac = require("./pac");
 module.exports.room = require("./room");
 module.exports.updateData = require("./updateData");
 module.exports.countryAndHotel = require("./countryAndHotels");
+module.exports.action = require("./action");

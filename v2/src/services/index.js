@@ -9,3 +9,4 @@ module.exports.pricePerPerson = require("./pricePerPerson");
 module.exports.pac = require("./pac");
 module.exports.countryAndHotel = require("./countryAndHotel");
 module.exports.updateData = require("./updateData");
+module.exports.action = require("./action");
