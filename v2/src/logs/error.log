@@ -2,3 +2,4 @@
 {"level":"error","message":"\"contract\" must be a string","service":"user-service"}
 {"level":"error","message":"\"selectedContract\" is not allowed","service":"user-service"}
 {"level":"error","message":"\"email\" must be a valid email","service":"user-service"}
+{"level":"error","message":"\"value\" must be an array","service":"user-service"}

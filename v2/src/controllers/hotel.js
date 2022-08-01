@@ -6,13 +6,15 @@ const {
 	room,
 	pricePerPerson,
 	pac,
-	countryAndHotel
+	countryAndHotel,
+	action
 } = require("../services/");
 async function getContrat(hotelId) {
 	let item = await contract.getHotelContract(hotelId).catch((e) => console.log('contrat hata: ' + e));
 	for (const [i, c] of item.entries()) {
 		item[i] = item[i].toObject();
 		item[i].country = await countryAndHotel.getContractCountry(c._id).then((response) => response.map((x) => x.country_id)).catch((e) => console.log('Contrat hatası ' + e));
+		item[i].action = await action.getContractsAction(c._id);
 	}
 	return item;
 }
@@ -47,6 +49,7 @@ async function getPac(room) {
 	}
 	return returnData;
 }
+
 const index = async (req, res) => {
 	console.log('istek geldi');
 	const hotels = [];
