@@ -8,8 +8,8 @@ const Action = new Mongoose.Schema({
     }],
     contract: {type: Mongoose.Types.ObjectId, ref:"contract"},
     stayAndArrival: Boolean,
-    actionSeries: String,
-    salesData:{
+    series: String,
+    salesDate:{
         start: Date,
         end: Date,
     },
